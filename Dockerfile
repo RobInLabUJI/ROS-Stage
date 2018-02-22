@@ -1,7 +1,7 @@
 FROM ros:indigo-ros-base
 
 # install ros tutorials packages
-RUN apt-get update || 0
+RUN apt-get update || true
 RUN apt-get install -y \
     ros-indigo-stage-ros \
     python-pip \
