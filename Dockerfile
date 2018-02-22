@@ -3,7 +3,7 @@ FROM ros:kinetic-ros-base
 # install ros tutorials packages
 RUN apt-get update || true
 RUN apt-get install -y \
-    ros-indigo-stage-ros \
+    ros-kinetic-stage-ros \
     python-pip \
     && rm -rf /var/lib/apt/lists/
 
