@@ -3,7 +3,8 @@ FROM ros:kinetic-ros-base
 # install ros tutorials packages
 RUN apt-get update || true
 RUN apt-get install -y \
-    ros-kinetic-stage-ros ros-kinetic-gmapping ros-kinetic-map-server \
+    ros-kinetic-stage-ros ros-kinetic-turtlebot-stage \
+    ros-kinetic-gmapping ros-kinetic-map-server \
     python-pip \
     && rm -rf /var/lib/apt/lists/
 
